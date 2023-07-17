@@ -51,7 +51,7 @@ def main():
         PhysHlth = st.text_input('PhysHlth (0-30)')
 
     with col3:
-        Diffwalk = st.text_input('Difficltywalking (0 no / 1 yes)')
+        Diffwalk = st.text_input('Dificltwalk (0 no / 1 yes)')
 
     with col4:
         Gender = st.text_input('Gender (0 female / 1 male)')
@@ -65,7 +65,7 @@ def main():
         
     # creating a button for Prediction
     
-    if st.button('Diabetes Test Result'):
+    if st.button('Heart Disease Detection Result'):
         input_data = [int(HighBp),
                       int(HighChol),
                       int(BMI),
@@ -90,7 +90,7 @@ def main():
             diab_diagnosis = 'The person may have heart disease'
             
         else:
-            diab_diagnosis = 'The person may not have heart disease'
+            diab_diagnosis = 'The person does not have heart disease'
         
     st.success(diab_diagnosis)
 
