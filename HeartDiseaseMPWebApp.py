@@ -14,7 +14,7 @@ def main():
 
     
     # page title
-    st.title('Heart Disease Detection using ML')
+    st.title('Heart Disease Detection using ML-ANN')
         
         
     # getting the input data from the user
@@ -81,12 +81,12 @@ def main():
                       int(Age)]
         data = np.asarray(input_data)
         data_reshaped = data.reshape(1,-1)
-        '''diab_prediction = diabetes_model.predict(data_reshaped)
-        diab_percentage = _model.predict_proba(data_reshaped)
-        prob = np.max(diab_percentage, axis=1)
-        max_prob = np.round(prob, 3)'''
+        diab_prediction = diabetes_model.predict(data_reshaped)
+        #diab_percentage = _model.predict_proba(data_reshaped)
+        #prob = np.max(diab_percentage, axis=1)
+        #max_prob = np.round(prob, 3)
     
-        if (diab_prediction[0] == 1):
+        if (diab_prediction[0] > 0.5):
             diab_diagnosis = 'The person may have heart disease'
             
         else:
