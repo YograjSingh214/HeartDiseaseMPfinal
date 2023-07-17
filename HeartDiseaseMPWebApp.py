@@ -86,7 +86,7 @@ def main():
         #prob = np.max(diab_percentage, axis=1)
         #max_prob = np.round(prob, 3)
     
-        if (diab_prediction[0] > 0.5):
+        if (diab_prediction[0] > 0.17):
             diab_diagnosis = 'The person may have heart disease'
             
         else:
