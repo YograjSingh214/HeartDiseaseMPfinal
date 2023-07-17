@@ -24,7 +24,7 @@ def main():
         HighBp = st.text_input('High BP (0 no / 1 yes)')
             
     with col2:
-        HighChol = st.text_input('High cholestrol (0 no /1 yes)')
+        HighChol = st.text_input('cholestrol (0 no /1 yes)')
         
     with col3:
         BMI = st.text_input('BMI (12-98)')
@@ -39,7 +39,7 @@ def main():
         Diabetes = st.text_input('Diabetes (0, 1, 2)')
 
     with col3:
-        PhysActivity = st.text_input('physical activity (0 no / 1 yes)')
+        PhysActivity = st.text_input('physclactivity (0 no / 1 yes)')
 
     with col4:
         HvyAlcoholConsump = st.text_input('Alcoholic (0 no / 1 yes)')
@@ -51,7 +51,7 @@ def main():
         PhysHlth = st.text_input('PhysHlth (0-30)')
 
     with col3:
-        Diffwalk = st.text_input('Difficulty in walking (0 no / 1 yes)')
+        Diffwalk = st.text_input('Difficltywalking (0 no / 1 yes)')
 
     with col4:
         Gender = st.text_input('Gender (0 female / 1 male)')
